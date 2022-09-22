@@ -11,6 +11,11 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+img{
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px gray;
+
+}
 #list-item .item .item-price {
     color: red;
 }
