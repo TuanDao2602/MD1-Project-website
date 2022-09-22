@@ -49,7 +49,7 @@
         } else if (email == data.email && password == data.password) {
             alert("dang nhap thanh cong");
 
-            window.location.href="trangchu.html"
+            window.location.href="index.html"
         } else {
             alert("Đăng nhập thất bại");
             alert("nếu chưa có tài khoản thì hãy đăng kí");
