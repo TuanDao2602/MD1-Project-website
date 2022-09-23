@@ -40,12 +40,14 @@
     btnDangNhap1.onclick = function login() {
         event.preventDefault();
         // let username = document.getElementById("username").value;
+        let emailTrong = document.getElementById("emailsai");
+        let passwordtrong = document.getElementById("passworsai")
         let email = document.getElementById("emaildangnhap").value;
         let password = document.getElementById("passworddangnhap").value;
         let user = localStorage.getItem(email);
         let data = JSON.parse(user);
         if (!user) {
-            alert("vui long nhap username password");
+            alert("Vui Lòng Nhập Lại Username & Password");
         } else if (email == data.email && password == data.password) {
             alert("dang nhap thanh cong");
 

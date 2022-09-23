@@ -18,7 +18,7 @@ function cart(){
     </div>
     <input type="number" class="soluong" value="1">
     <p class="tongtien">599.000</p>
-    <button class="xoa"> Xóa</button>
+    <button id="xoaSanPham" class="xoa"> Xóa</button>
     `
         document.getElementById("itemgiohang").innerHTML = dataRender1;
     }

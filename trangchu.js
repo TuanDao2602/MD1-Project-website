@@ -7,11 +7,19 @@ function signOut(){
 
     }
 }
+
 let username = window.localStorage.getItem("USERNAME_KEY")
 // let signOut=document.getElementById("signout")
 if (username!==null) {
     document.getElementById("dangnhap").innerHTML = username;
     document.getElementById("dangky").innerHTML="";
+    document.getElementById("signout").style.display= "block"
+
+}
+
+else if (username==null){
+    document.getElementById("signout").style.display= "none"
+
 }
 
 
@@ -235,6 +243,7 @@ const products = [
 
 
 
+
 ]
 
 
@@ -256,6 +265,7 @@ function sowProducts(id, hinhAnh, ten, theLoai, gia) {
        <div class="item-price">
           $ ${gia}
        </div>
+       <button id="themGioHang">Thêm Vào Gio Hàng</button>
     </div>
     `
 
@@ -285,6 +295,8 @@ sowAllProducys(products)
 
 let sanPham=[];
 function getDataItem(id){
+    confirm("bạn muốn thêm sản phẩm ?")
+    // window.location.reload()
     for(let i =0;i<products.length;i++){
         if(products[i].id===id){
             sanPham.push(products[i])
@@ -294,7 +306,8 @@ function getDataItem(id){
     localStorage.setItem("cart",JSON.stringify(sanPham))
 }
 
-let btn = document.getElementById()
+let btn = document.getElementById(xoaSanPham)
+console.log("a")
 
 
 
